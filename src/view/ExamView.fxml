@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ExamController">
+   <children>
+      <Label fx:id="titelLabel" text="Prüfungen" />
+      <ListView fx:id="versuchsListe" prefHeight="260.0" prefWidth="200.0" />
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onVersuchHinzufuegen" text="Versuch hinzufügen" />
+            <Button fx:id="versuchLoeschenButton" mnemonicParsing="false" onAction="#onVersuchLoeschen" text="Versuch löschen" />
+            <Button mnemonicParsing="false" onAction="#onSchliessen" text="Schließen" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+   </padding>
+</VBox>
